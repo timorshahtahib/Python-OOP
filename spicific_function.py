@@ -12,8 +12,16 @@ class Point:
         return "Point x={}, Point Y={}".format(self.a,self.b)
     
     
-    
+    def __add__(self,other):
+       a=self.a+other.a
+       b=self.b+other.b
+       
+       return Point(a,b)
 
 
-p=Point(12,13)
-print(p)
+p1=Point(12,13)
+p2=Point(5,6)
+
+
+print(p1)
+print(p1+p2)
