@@ -1,16 +1,24 @@
-from turtle import color
 
 
 class car:
     color="red"
+    model =0
     
-    def getcolor(self,color):
-  
+    
+    def __init__(self,color,model):
         self.color=color
+        self.model=model
+        
+        
+    def getModel(self):
+        return self.model
+    def getcolor(self):
+  
         return   self.color  
      
 
-myob=car()
+myob=car("red",1990)
 
 
-print(myob.getcolor("golsd"))
+print(myob.getcolor())
+print(myob.getModel())
