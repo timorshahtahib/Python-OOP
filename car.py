@@ -1,11 +1,7 @@
 
 
 class car:
-    color="red"
-    model =0
-    
-    
-    def __init__(self,color,model):
+    def __init__(self,color,model=1992):
         self.color=color
         self.model=model
         
