@@ -17,6 +17,10 @@ class Point:
        b=self.b+other.b
        
        return Point(a,b)
+    def __sub__(self,other):
+      a=self.a-other.a
+      b=self.b-other.b
+      return Point(a,b)
 
 
 p1=Point(12,13)
@@ -25,3 +29,4 @@ p2=Point(5,6)
 
 print(p1)
 print(p1+p2)
+print(p1-p2)
